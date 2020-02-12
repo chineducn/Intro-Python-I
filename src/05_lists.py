@@ -15,8 +15,9 @@ print(x)
 # Using y, change x so that it is [1, 2, 3, 4, 8, 9, 10]
 # YOUR CODE HERE
 
-for n in y:
-    x.append(n)
+# for n in y:
+#     x.append(n)
+x = x + y
 
 print(x)
 
