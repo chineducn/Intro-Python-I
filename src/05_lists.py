@@ -17,7 +17,8 @@ print(x)
 
 # for n in y:
 #     x.append(n)
-x = x + y
+# x = x + y
+x.extend(y)
 
 print(x)
 
