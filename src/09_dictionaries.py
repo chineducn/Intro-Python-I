@@ -51,7 +51,9 @@ print(waypoints)
 # waypoints list.
 
 # YOUR CODE HERE
-waypoints[0].update({'lon': -130, 'name': 'not a real place'})
+# waypoints[0].update({'lon': -130, 'name': 'not a real place'})
+waypoints[0]['lon'] = -130
+waypoints[0]['name'] = 'not a real place'
 
 print(waypoints)
 
@@ -59,8 +61,9 @@ print(waypoints)
 # YOUR CODE HERE
 
 for n in waypoints:
-    values_view = n.values()
-    values_list = list(values_view)
-    for item in values_list:
-        print(item)
+    print(n['lon'], n['lat'], n['name'])
+    # values_view = n.values()
+    # values_list = list(values_view)
+    # for item in values_list:
+    #     print(item)
 
