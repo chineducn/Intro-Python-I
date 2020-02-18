@@ -35,13 +35,12 @@ len_arg = len(sys.argv)
 
 if len_arg == 1:
     print(calendar.month(datetime.now().year, datetime.now().month))
-elif len_arg == 2 and 1 <= int(sys.argv[1]) <= 12:
+elif (len_arg == 2) and (1 <= int(sys.argv[1]) <= 12):
     month = int(sys.argv[1])
     print(calendar.month(datetime.now().year, month))
-elif len_arg == 3:
+elif (len_arg == 3) and (1 <= int(sys.argv[1]) <= 12) and (int(sys.argv[2]) >= 0):
     month = int(sys.argv[1])
     year = int(sys.argv[2])
     print(calendar.month(year, month))
 else:
-    print('None')
-    
+    print(f'Enter values in the terminal like "python 14_cal.py 12 2010", where "python 14_cal.py" calls the file that has the program, "12" is the month and should be an integer from 1 and 12 with 1 and 12 inclusive, "2010" is the year and is an integer greater than or equal to zero')
